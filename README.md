@@ -145,6 +145,19 @@ EzService支持通过命名空间管理API函数：
 - 自定义命名空间: 使用`namespace='custom_name'`
 - 多命名空间: 使用逗号分隔，如`namespace='math,utils'`
 
+
+
+### mcpserver转化
+
+ 提供了一个MCP服务转化工具（老实说那个协议真是蛋疼啊...)
+ ```python mcpClientTransform https://your_tools_site/jsonrpc```
+ 就能把接口转化成sse的那种接口了。但是格式还是的转转，毕竟现在AI大乱斗时代，谁的格式都是一团乱麻
+
+
+
+
+
+
 ## 项目结构
 
 ```
