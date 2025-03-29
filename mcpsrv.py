@@ -70,7 +70,7 @@ class RPCServer(RequestHandler):
         return fn
 
     # 接下来只要实现这些就好了。。。。
-    async def with_initilize(self, req, session):
+    async def with_initialize(self, req, session):
         req_id = req.get('id')
         result = {"protocolVersion":"2024-11-05","capabilities":{"experimental":{},"prompts":{"listChanged":False},"resources":{"subscribe":False,"listChanged":False},"tools":{"listChanged":False}},"serverInfo":{"name":"mcpsrv","version":"1.3.0"}}
         await session.write_jsonrpc(req_id, result)
